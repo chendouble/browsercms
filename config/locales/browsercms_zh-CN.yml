@@ -1,0 +1,47 @@
+zh-CN:
+  activerecord:
+    models:
+        cms/html_block: "富文本"
+    attributes:
+        cms/html_block:
+          name: "名称"
+          content: "内容"
+          updated_at: "更新时间"
+  layouts:
+    cms:
+      content_library:
+        search: "搜索"
+        content_types: "内容类型"
+        include_body: "包含内容?"
+  cms:
+    section_nodes:
+      index:
+        edit_page: "编辑页面"
+        edit_properties: "编辑属性"
+        add_page: "新增页面"
+        add_section: "新增栏目"
+        add_link: "新增链接"
+        delete: "删除"
+    blocks:
+      index:
+        used: "引用数量"
+        status: "状态"
+      new:
+        page_title: "内容库 / 新增 %{type}"
+        toolbar_title: "新增 %{type}"
+        save: "保存"
+        save_and_publish: "保存并发布"
+      toolbar_for_collection:
+        publish: "发布"
+        view_content: "查看内容"
+        edit_content: "编辑内容"
+        add_new_content: "添加新内容"
+        list_versions: "查看历史版本"
+        delete: "删除"
+      toolbar_for_member:
+        publish: "发布"
+        view_content: "查看内容"
+        edit_content: "编辑内容"
+        add_new_content: "添加新内容"
+        list_versions: "查看历史版本"
+        delete: "删除"

@@ -7,12 +7,12 @@
 
 <%= content_for :functions do %>
   <h1>Sitemap</h1>
-  <%= link_to span_tag("Edit Page"), '#', :id => 'edit-button', :class => "button disabled left" %>
-  <%= link_to span_tag("Edit Properties"), '#', :id => 'properties-button', :class => "button disabled right" %>
-  <%= link_to span_tag("Add Page"), '#', :id => 'add-page-button', :class => "button disabled spacer left" %>
-  <%= link_to span_tag("Add Section"), '#', :id => 'add-section-button', :class => "button disabled middle" %>
-  <%= link_to span_tag("Add Link"), '#', :id => 'add-link-button', :class => "button disabled right" %>
-  <%= delete_button %>
+  <%= link_to span_tag("#{t '.edit_page'}"), '#', :id => 'edit-button', :class => "button disabled left" %>
+  <%= link_to span_tag("#{t '.edit_properties'}"), '#', :id => 'properties-button', :class => "button disabled right" %>
+  <%= link_to span_tag("#{t '.add_page'}"), '#', :id => 'add-page-button', :class => "button disabled spacer left" %>
+  <%= link_to span_tag("#{t '.add_section'}"), '#', :id => 'add-section-button', :class => "button disabled middle" %>
+  <%= link_to span_tag("#{t '.add_link'}"), '#', :id => 'add-link-button', :class => "button disabled right" %>
+  <%= delete_button :label=>"#{t '.delete'}"%>
   <br clear="all" />
 <% end %>
 

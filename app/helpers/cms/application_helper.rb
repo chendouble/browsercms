@@ -195,6 +195,9 @@ LBW
     # @option options [Path] :path The path or URL to link_to. Takes same types at url_for or link_to. Defaults to '#' if not specified.
     # @option options [Boolean] :enabled If false, the button will be marked disabled. Default to false.
     def delete_button(options={})
+      
+      defaults={:label=>"Delete"}
+      options= defaults.merge(options)
       classes = "button"
       classes << " disabled" if !options[:enabled]
       classes << " delete_button"
@@ -204,7 +207,7 @@ LBW
 
       span_options = {:id => 'delete_button', :class => classes}
       span_options[:title] = options[:title] if (!options[:title].blank? && options[:title].class == String)
-      link_to span_tag("<span class=\"delete_img\">&nbsp;</span>Delete".html_safe), link_to_path, span_options
+      link_to span_tag("<span class=\"delete_img\">&nbsp;</span>#{options[:label]}".html_safe), link_to_path, span_options
     end
 
     # Render a CMS styled 'Edit' button. This button will appear on tool bars, typically set apart visually from other buttons.

@@ -1,0 +1,47 @@
+en:
+  activerecord:
+    models:
+        cms/html_block: "Text"
+    attributes:
+        cms/html_block:
+          name: "Name"
+          content: "Content"
+          updated_at: "Updated On"
+  layouts:
+    cms:
+      content_library:
+        search: "Search"
+        content_types: "Content Types"
+        include_body: "Include body?"
+  cms:
+    section_nodes:
+      index:
+        edit_page: "Edit Page"
+        edit_properties: "Edit Properties"
+        add_page: "Add Page"
+        add_section: "Add Section"
+        add_link: "Add Link"
+        delete: "Delete"
+    blocks:
+      index:
+        used: "Used"
+        status: "status"
+      new:
+        page_title: "Content Library / Add New %{type}"
+        toolbar_title: "Add New %{type}"
+        save: "Save"
+        save_and_publish: "Save and Publish"
+      toolbar_for_collection:
+        publish: "Publish"
+        view_content: "View Content"
+        edit_content: "Edit Content"
+        add_new_content: "New Content"
+        list_versions: "List Versions"
+        delete: "Delete"
+      toolbar_for_member:
+        publish: "Publish"
+        view_content: "View Content"
+        edit_content: "Edit Content"
+        add_new_content: "Add New Content"
+        list_versions: "List Versions"
+        delete: "Delete"

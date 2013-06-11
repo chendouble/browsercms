@@ -2,8 +2,8 @@
   <%= stylesheet_link_tag('cms/form_layout') %>
   <%= stylesheet_link_tag('cms/content_library') %>
 <% end %>
-<% page_title "Content Library / Add New #{content_type.display_name}" %>
-<% @toolbar_title = "Add New #{content_type.display_name}" %>
+<% page_title t(".page_title",:type=>"#{content_type.display_name}") %>
+<% @toolbar_title = t(".toolbar_title",:type=>"#{content_type.display_name}") %>
 <%= content_for :functions,  render(:partial => 'cms/blocks/toolbar') %>
 <%= form_for(@block, :url => blocks_path, :html => {:multipart => true}) do |f| %>
   <%= f.cms_error_messages %>
@@ -12,8 +12,8 @@
   <%= render :partial => block_form, :locals => {:f => f} %>
   <% unless @hide_buttons %>
     <div class="buttons">
-      <%= save_and_publish_button(@block, content_type) %>
-      <%= lt_button_wrapper(f.submit("Save", :class => "submit", :tabindex => next_tabindex)) %>
+      <%= save_and_publish_button(@block, content_type,:label=> t(".save_and_publish") )%>
+      <%= lt_button_wrapper(f.submit("#{t '.save'}", :class => "submit", :tabindex => next_tabindex)) %>
     </div>
   <% end %>
 <% end %>

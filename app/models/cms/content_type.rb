@@ -101,8 +101,8 @@ module Cms
           column.respond_to?(:humanize) ? {:label => column.humanize, :method => column} : column
         end
       else
-        [{:label => "Name", :method => :name, :order => "name"},
-         {:label => "Updated On", :method => :updated_on_string, :order => "updated_at"}]
+        [{:label => model_class.human_attribute_name("name"), :method => :name, :order => "name"},
+         {:label => model_class.human_attribute_name("updated_at"), :method => :updated_on_string, :order => "updated_at"}]
       end
     end
 
