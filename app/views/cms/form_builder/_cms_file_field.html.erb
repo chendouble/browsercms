@@ -18,11 +18,11 @@
         </div>
         <% if options[:edit_section] %>
             <%= render :partial=>'cms/file_blocks/section_selector' %>
-            <%= a.cms_drop_down :section_id, @sections.map {|s| [s.full_path, s.id]}, {:label => "Section"}, {'data-purpose'=>"section_selector"} %>
+            <%= a.cms_drop_down :section_id, @sections.map {|s| [s.full_path, s.id]}, {:label => "#{t '.section'}"}, {'data-purpose'=>"section_selector"} %>
         <% end %>
         <% if options[:edit_path] %>
             <% suggest_file_path =  model_object.new_record? ? "suggest_file_path" : "keep_existing_path" %>
-            <%= a.cms_text_field :data_file_path, :label => "Path", :class=>suggest_file_path  %>
+            <%= a.cms_text_field :data_file_path,:class=>suggest_file_path  %>
         <% end %>
     <% end %>
 <% end %>

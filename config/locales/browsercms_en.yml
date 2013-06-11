@@ -2,18 +2,84 @@ en:
   activerecord:
     models:
         cms/html_block: "Text"
+        cms/page: "Page"
+        cms/section: "Section"
+        cms/file_block: "File"
+        cms/attachement: "Attachment"
+        cms/image_block: "Image"
     attributes:
         cms/html_block:
           name: "Name"
           content: "Content"
           updated_at: "Updated On"
+        cms/page:
+          name: "Name"
+          title: "Title"
+          path: "Path"
+          template_file_name: "Template"
+          description: "Description"
+          keywords: "Keywords"
+          language: "Language"
+          cacheable: "Cache Enabled?"
+          hidden: "Hidden from menu?"
+          published: "Published"
+          deleted: "Deleted"
+          archived: "Archived?"
+        cms/section:
+          name: "Name"
+          path: "Path"
+          hidden: "Hidden from menu?"
+        cms/file_block:
+          name: "Name"
+          file: "File"
+        cms/image_block:
+          name: "Name"
+        cms/attachment:
+          data_file_path: "Path"
   layouts:
+    cms_toolbar:
+      logout: "Logout"
+    page_toolbar:
+      status: "STATUS"
+      section: "SECTION"
+      page: "PAGE"
+      template: "TEMPLATE"
+      version: "VERSION"
+      publish: "PUBLISH"
+      assign: "ASSIGN TASK"
+      complete: "COMPLETE TASK"
+      edit_properties: "EDIT PROPERTIES"
+      list_versions: "LIST VERSIONS"
+      delete: "DELETE"
+      revert: "Revert to this Version"
+      status_on: "ON"
+      status_off: "OFF"
+      turn_off: "TURN OFF"
+      turn_on: "TURN ON"
     cms:
       content_library:
         search: "Search"
         content_types: "Content Types"
         include_body: "Include body?"
   cms:
+    form_builder:
+      cms_file_field:
+        section: "Section"
+      cms_tag_list:
+        tags: "Tags"
+    connectors:
+      new:
+        add_to_page: "ADD TO PAGE"
+        view_content: "VIEW CONTENT"
+        choose_type: "Choose Type of Content"
+        name: "Name"
+        updated: "Updated"
+        uses: "Uses"
+    sections:
+      form:
+        public_permissions: "Public Permissions"
+        cms_permissions: "CMS Permissions"
+        save: "Save"
     section_nodes:
       index:
         edit_page: "Edit Page"

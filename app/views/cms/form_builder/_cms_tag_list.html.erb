@@ -6,7 +6,7 @@
   <% end %>
 <% end %>
 <div class="fields text_fields">
-  <%= f.label :tag_list, (cms_options[:label] || "Tags") %>
+  <%= f.label :tag_list, (cms_options[:label] || "#{t '.tags'}") %>
   <%= f.tag_list options %>
   <% if cms_options[:instructions] %>
     <div class="instructions"><%=h cms_options[:instructions] %></div>
