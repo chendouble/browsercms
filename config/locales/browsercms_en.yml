@@ -1,4 +1,7 @@
 en:
+  browsercms:
+    messages:
+      select_asset_type: "Select a type to upload a file"
   activerecord:
     models:
         cms/html_block: "Text"

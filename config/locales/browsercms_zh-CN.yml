@@ -1,4 +1,7 @@
 zh-CN:
+  browsercms:
+    messages:
+      select_asset_type: "选择附件类型"
   activerecord:
     models:
         cms/html_block: "富文本"

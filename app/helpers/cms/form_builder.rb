@@ -85,7 +85,7 @@ class Cms::FormBuilder < ActionView::Helpers::FormBuilder
     names = defs.keys.sort
     return if names.empty?
 
-    names.unshift "Select a type to upload a file" if names.size > 1
+    names.unshift I18n.t("browsercms.messages.select_asset_type") if names.size > 1
     render_cms_form_partial :attachment_manager, :asset_definitions => defs, :asset_types => names
   end
 
