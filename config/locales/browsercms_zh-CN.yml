@@ -65,6 +65,11 @@ zh-CN:
         content_types: "内容类型"
         include_body: "包含内容?"
   cms:
+    sessions:
+      new:
+        username: "用户名"
+        password: "口令"
+        login: "登录"
     form_builder:
       cms_file_field:
         section: "存放位置"

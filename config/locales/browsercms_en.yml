@@ -65,6 +65,11 @@ en:
         content_types: "Content Types"
         include_body: "Include body?"
   cms:
+    sessions:
+      new:
+        username: "login"
+        password: "password"
+        login: "LOGIN"
     form_builder:
       cms_file_field:
         section: "Section"
